@@ -1,0 +1,130 @@
+*{
+    user-select: none;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #121212; 
+    border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+body{
+    margin: 0;
+    font-family: Roboto;
+    background-color: black;
+    color: white;
+}
+.header{
+    height: 90px;
+    display: flex;
+    color: white;
+    flex-direction: row;
+    background-color: rgb(22, 22, 22);
+    border-radius: 5px;
+    p{
+        margin-left: 22px;
+        font-size: 50px;
+        margin-bottom: auto;
+        margin-top: auto;
+        background: linear-gradient(to bottom right, red, rgb(104, 104, 104));
+        -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .navs{
+        margin: auto 10px auto auto;
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin:auto 20px auto 0px;
+            transition: all ease-in 0.5s;
+        }
+        a:hover{
+            background: linear-gradient(to bottom right, red, rgb(85, 85, 85));
+            -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+        }
+    }
+}
+.cards{
+    width: 1430px;
+    height: max-content;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .card{
+        display: flex;
+        flex-direction: column;
+        .photo{
+            cursor: pointer;
+            background-image: url('photo.png');
+            background-position: center;
+            background-size: cover;
+            width: 220px;
+            height: 220px;
+            margin: auto auto 0 auto;
+        }
+        .title{
+            margin: auto auto 0 auto;
+            cursor: pointer;
+        }
+        h3{
+            margin: auto auto 0 auto;
+            cursor: pointer;
+        }
+        height: 300px;
+        width: 460px;
+        transition: all 0.6s;
+        margin: 30px 0 0 0;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+}
+
+.footer{
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-weight: none;
+        margin: auto auto auto auto;
+    }
+    .options{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        height: 20px;
+        gap: 10px;
+        .pipes{font-size: 20px;margin: auto 0 auto 0;color: #6b6b6b;}
+        p:first-child{
+            margin-left: auto;
+        }
+        p{margin: auto 0 auto 0;}
+        p:last-child{
+            margin-right: auto;
+        }
+        .contact-text{
+            font-size: 25px;
+        }
+    }
+}
